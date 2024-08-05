@@ -1,3 +1,10 @@
+import Header from "@/components/Header/Header";
+
 export default function Home() {
-  return <main className="min-h-screen"></main>;
+  return (
+    <>
+      <Header />
+      <main className="min-h-screen"></main>
+    </>
+  );
 }
