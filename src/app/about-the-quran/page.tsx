@@ -7,7 +7,7 @@ export default function AboutPage() {
     <>
       <Header />
 
-      <main className="w-[71%] mx-auto mt-24 py-16 px-7 md:px-14 text-[#272727] text-base">
+      <main className="w-[85%] md:w-[71%] mx-auto mt-24 py-16 px-7 md:px-14 text-[#272727] text-base">
         <section>
           <h2 className="text-2xl font-extrabold mb-4">What is the Quran?</h2>
 

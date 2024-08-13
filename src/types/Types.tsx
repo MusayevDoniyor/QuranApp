@@ -8,3 +8,7 @@ export interface Surah {
 export interface SpinnerSize {
   size?: number;
 }
+
+export interface Error {
+  description: string;
+}

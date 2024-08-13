@@ -1,6 +1,6 @@
 import React from "react";
 
-function Modal({ setisModalOpen, isModalOpen }) {
+function Modal({}) {
   return <></>;
 }
 

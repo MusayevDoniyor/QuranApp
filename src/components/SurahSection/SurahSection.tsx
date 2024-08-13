@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import api from "@/api/api";
 import SurahComponent from "../SurahComponent/SurahComponent";
 import { Surah } from "@/types/Types";
-import { Alert } from "flowbite-react";
 import Spinner from "../Spinner/Spinner";
+import ErrorMsg from "../Messages/Error/Error";
 
 export default function SurahSection() {
   const [data, setData] = useState<Surah[]>([]);
@@ -41,12 +41,10 @@ export default function SurahSection() {
 
   return (
     <section className="my-10 px-4 sm:px-6 md:px-8 lg:px-10">
-      <Alert />
-
       <div className="container mx-auto">
         {error ? (
           <section className="text-center">
-            <p className="text-red-600 font-bold text-2xl">{error}</p>
+            <ErrorMsg description={error} />
           </section>
         ) : (
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
